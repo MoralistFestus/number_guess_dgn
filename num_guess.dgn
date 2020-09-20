@@ -2,15 +2,17 @@ select "std"
 num = rand(0, 20)
 input = readln() 
 if (input == num) {
-  showln ("hit")
+  showln ("You guess right")
 }
 else if (input < num) {
   showln ("Your number is too low")
+  showln ("Answer is "+num) 
 }
 else {
   showln ("Your number is too high")
+  showln ("Answer is "+num) 
 }
-showln (num)
+
 
 /* TODO: 
    the std module contains functions for 
