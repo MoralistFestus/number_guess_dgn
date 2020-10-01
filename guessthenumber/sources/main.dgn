@@ -1,0 +1,27 @@
+select "std"
+select "types"
+ number = rand(0, 10)
+  show "Enter your name"
+  player_name = readln()
+  showln ("I am "+player_name+ "I am guessing a number between 1 and 10")
+  
+
+  show "Guess a Number from 0 to 10"
+  input = readln("Enter a number")
+
+if (input == number) {
+    showln ("You guess right")
+    
+}
+else if (input > number) {
+    showln ("Your guess is too low")
+    showln ("Right answer is " +number)  
+      input = readln("Enter a number")
+
+}
+else {
+    showln ("Your guess is too high")
+    showln ("Right answer is " +number)
+      input = readln("Enter a number")
+
+} 
